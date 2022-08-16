@@ -15,11 +15,12 @@ deploy:
   region: ap-south-1
   app:  my-user-wishlist-app
   env:  Myuserwishlistapp-env
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY 
+  secret_access_key: $AWS_SECRET_KEY 
   bucket_name: "multicontainer-wishlist-app"
   bucket_path: "docker"
   on:
     branch: multi-cont-app
+  edge: true
 
 

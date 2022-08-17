@@ -4,11 +4,11 @@ services:
   - docker
 
 after_success:
-  - docker build -t sudha/user-wishlist-app .
+  - docker build -t sudha8434/user-wishlist-app .
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-  -  docker push sudha/user-wishlist-app
+  -  docker push sudha8434/user-wishlist-app
 
 deploy:
   provider: elasticbeanstalk
